@@ -99,7 +99,7 @@ fig, ax = plt.subplots(figsize=(float(8.2), float(4.8)))
 ax.bar(x - w / 2, observed, width=float(w), color='#1f77b4', label=r'observed $v_2(n_k)$')
 ax.bar(x + w / 2, model, width=float(w), color='#ff7f0e',
        label=r'model $\hat v(k)+s(k)+\mathrm{NB}(3,\frac{3}{5})$')
-ax.set_xlabel(r'$v_2(n_k)$'); ax.set_ylabel('number of curves')
+ax.set_xlabel(r'$v_2(n_k)$'); ax.set_ylabel('count')
 ax.set_title(r'$v_2(n_k)$: data vs model   ($N = %s$, $\chi^2/\nu = %.1f$)'
              % ('{:,}'.format(N), chi2 / nu))
 ax.set_xlim(-1, min(VMAX, 27))
