@@ -47,7 +47,7 @@ files = sorted(
     [f for f in glob.glob(
         os.path.join(
             DATA_DIR,
-            '../MahlerExperiments/v2/v2_fD/v2_fD run 3 (best run)/eval.valid.elliptic_curve.*'
+            '../MahlerExperiments/v2/v2_fD/v2_fD run 1 (best run)/eval.valid.elliptic_curve.*'
         )
     ) if f.rsplit('.', 1)[-1].isdigit()],
     key=epoch_of
