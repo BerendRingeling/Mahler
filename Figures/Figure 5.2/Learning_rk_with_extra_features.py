@@ -27,7 +27,7 @@ import numpy as np
 HERE = os.path.dirname(os.path.abspath(__file__)) if '__file__' in dir() else '.'
 RUNS = [
     (r'conductor $N_k$',        '../MahlerExperiments/rk/rk_wN/final-03e.PB3-exp',  '#555555', '-',  2.0),
-#    (r'exp 3 -- raw conductor $N$ (run B)',        '../MahlerExperiments/rk/rk_wN/final-03e.PB6-exp',  '#999999', '--', 1.6),
+#    (r'exp 3 -- raw conductor $N$ (run B)',        '../MahlerExperiments/rk/rk_wN/size/rk_wN run 1 (size)',  '#999999', '--', 1.6),
     (r'factored conductor $\mathrm{factor}(N_k)$',           '../MahlerExperiments/rk/rk_wfN/size/rk_wfN (size)',  '#1f77b4', '-',  2.0),
     (r'factored discriminant $\mathrm{factor}(\Delta_k)$',  '../MahlerExperiments/rk/rk_wfD/size/rk_wfD (size)','#d62728','-',  2.0),
 ]
