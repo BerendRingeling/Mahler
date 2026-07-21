@@ -42,8 +42,12 @@ def greedy_accuracy(path):
 def epoch_of(path):
     return int(path.rsplit('.', 1)[1])
 
-files = sorted(glob.glob(os.path.join(DATA_DIR, '../MahlerExperiments/v2/v2_fD/v2_fD run 3 (best run)/eval.valid.elliptic_curve.*')),
+files = sorted([f for f in glob.glob(os.path.join(DATA_DIR, '../MahlerExperiments/v2/v2_fD/v2_fD run 3 (best run)/eval.valid.elliptic_curve.*')) if f.rsplit('.', 1)[-1].isdigit()],
                key=epoch_of)
+if not files:
+    raise FileNotFoundError('no eval.valid.elliptic_curve.* files found -- '
+        'expected the MahlerExperiments folder inside the Figures folder '
+        '(see the path at the top of this script)')
 
 points = []
 for f in files:

@@ -26,7 +26,7 @@ ACCEPT     = 2.0                    # magnitude tolerance factor
 # ===================================
 def epoch_of(p): return int(p.rsplit('.', 1)[1])
 def eval_files(d):
-    return sorted(glob.glob(os.path.join(d, '**', 'eval.valid.elliptic_curve.*'), recursive=True),
+    return sorted([f for f in glob.glob(os.path.join(d, '**', 'eval.valid.elliptic_curve.*'), recursive=True) if f.rsplit('.', 1)[-1].isdigit()],
                   key=epoch_of)
 # answer=[a0, a1]  ... greedy \n decoded=[g0, g1]
 BLOCK = re.compile(

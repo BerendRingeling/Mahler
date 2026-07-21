@@ -43,10 +43,10 @@ def find(name):
 # locate the eval file for the chosen epoch
 eval_dir = None
 for c in [os.path.join(HERE, EXP_DIR), HERE]:
-    if glob.glob(os.path.join(c, 'eval.valid.elliptic_curve.*')):
+    if [f for f in glob.glob(os.path.join(c, 'eval.valid.elliptic_curve.*')) if f.rsplit('.', 1)[-1].isdigit()]:
         eval_dir = c; break
 if eval_dir is None:
-    hit = glob.glob(os.path.join(HERE, '**', 'eval.valid.elliptic_curve.*'), recursive=True)
+    hit = [f for f in glob.glob(os.path.join(HERE, '**', 'eval.valid.elliptic_curve.*'), recursive=True) if f.rsplit('.', 1)[-1].isdigit()]
     eval_dir = os.path.dirname(hit[0])
 eval_file = os.path.join(eval_dir, 'eval.valid.elliptic_curve.%d' % EPOCH)
 out_full  = find(OUTPUT_FULL)

@@ -22,8 +22,12 @@ DATA_DIR = os.path.dirname(os.path.abspath(__file__)) if '__file__' in dir() els
 def epoch_of(p): return int(p.rsplit('.', 1)[1])
 files = []
 for c in [os.path.join(DATA_DIR, '../MahlerExperiments/v3/v3_fD/v3_fD run 2 (best run)'), DATA_DIR]:
-    files = sorted(glob.glob(os.path.join(c, 'eval.valid.elliptic_curve.*')), key=epoch_of)
+    files = sorted([f for f in glob.glob(os.path.join(c, 'eval.valid.elliptic_curve.*')) if f.rsplit('.', 1)[-1].isdigit()], key=epoch_of)
     if files: break
+if not files:
+    raise FileNotFoundError('no eval.valid.elliptic_curve.* files found -- '
+        'expected the MahlerExperiments folder inside the Figures folder '
+        '(see the path at the top of this script)')
 STRIDE = 1                       # set to 3 to subsample epochs for speed
 files = files[::STRIDE]
 

@@ -44,20 +44,20 @@ def epoch_of(path):
 
 
 files = sorted(
-    glob.glob(
+    [f for f in glob.glob(
         os.path.join(
             DATA_DIR,
             '../MahlerExperiments/v2/v2_fD/v2_fD run 3 (best run)/eval.valid.elliptic_curve.*'
         )
-    ),
+    ) if f.rsplit('.', 1)[-1].isdigit()],
     key=epoch_of
 )
 
 if not files:
     files = sorted(
-        glob.glob(
+        [f for f in glob.glob(
             os.path.join(DATA_DIR, 'eval.valid.elliptic_curve.*')
-        ),
+        ) if f.rsplit('.', 1)[-1].isdigit()],
         key=epoch_of
     )
 

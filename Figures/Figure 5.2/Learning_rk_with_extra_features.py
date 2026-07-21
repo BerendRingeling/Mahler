@@ -41,10 +41,10 @@ def epoch_of(p):
 def locate(folder):
     """Find the experiment folder: as given, under HERE, or anywhere below HERE."""
     for c in [folder, os.path.join(HERE, folder)]:
-        if glob.glob(os.path.join(c, 'eval.valid.elliptic_curve.*')):
+        if [f for f in glob.glob(os.path.join(c, 'eval.valid.elliptic_curve.*')) if f.rsplit('.', 1)[-1].isdigit()]:
             return c
-    hits = glob.glob(os.path.join(HERE, '**', os.path.basename(folder),
-                                  'eval.valid.elliptic_curve.*'), recursive=True)
+    hits = [f for f in glob.glob(os.path.join(HERE, '**', os.path.basename(folder),
+                                  'eval.valid.elliptic_curve.*'), recursive=True) if f.rsplit('.', 1)[-1].isdigit()]
     if hits:
         return os.path.dirname(hits[0])
     raise FileNotFoundError(folder)
@@ -56,7 +56,7 @@ BLOCK = re.compile(
 logA = math.log(ACCEPT)
 
 def curve(folder):
-    files = sorted(glob.glob(os.path.join(locate(folder), 'eval.valid.elliptic_curve.*')),
+    files = sorted([f for f in glob.glob(os.path.join(locate(folder), 'eval.valid.elliptic_curve.*')) if f.rsplit('.', 1)[-1].isdigit()],
                    key=epoch_of)
     E = []; size_acc = []
     for f in files:

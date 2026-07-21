@@ -31,11 +31,15 @@ MAX_EPOCH = 20
 def epoch_of(path):
     return int(path.rsplit('.', 1)[1])
 
-files = sorted(glob.glob(os.path.join(DATA_DIR, '../MahlerExperiments/v2/v2_fD/v2_fD run 3 (best run)/eval.valid.elliptic_curve.*')),
+files = sorted([f for f in glob.glob(os.path.join(DATA_DIR, '../MahlerExperiments/v2/v2_fD/v2_fD run 3 (best run)/eval.valid.elliptic_curve.*')) if f.rsplit('.', 1)[-1].isdigit()],
                key=epoch_of)
 if not files:  # allow running from inside the 'v2_fD run 3 (best run)' folder too
-    files = sorted(glob.glob(os.path.join(DATA_DIR, 'eval.valid.elliptic_curve.*')),
+    files = sorted([f for f in glob.glob(os.path.join(DATA_DIR, 'eval.valid.elliptic_curve.*')) if f.rsplit('.', 1)[-1].isdigit()],
                    key=epoch_of)
+if not files:
+    raise FileNotFoundError('no eval.valid.elliptic_curve.* files found -- '
+        'expected the MahlerExperiments folder inside the Figures folder '
+        '(see the path at the top of this script)')
 
 # ---- v_hat(k) ----
 def omega_odd(m):

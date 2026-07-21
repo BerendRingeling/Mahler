@@ -24,9 +24,13 @@ def epoch_of(path):
 
 files = []
 for c in CANDIDATES:
-    files = sorted(glob.glob(os.path.join(c, 'eval.valid.elliptic_curve.*')), key=epoch_of)
+    files = sorted([f for f in glob.glob(os.path.join(c, 'eval.valid.elliptic_curve.*')) if f.rsplit('.', 1)[-1].isdigit()], key=epoch_of)
     if files:
         break
+if not files:
+    raise FileNotFoundError('no eval.valid.elliptic_curve.* files found -- '
+        'expected the MahlerExperiments folder inside the Figures folder '
+        '(see the path at the top of this script)')
 
 # exact-match of the FULL decoded list vs answer (the greedy_acc metric)
 BLOCK = re.compile(
