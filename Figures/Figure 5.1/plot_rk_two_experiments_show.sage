@@ -18,8 +18,8 @@
 import os, re, glob, math
 import numpy as np
 # ============ configure ============
-EXP1_DIR   = 'final-01e.PB2-exp'          # folder with eval.valid.* files, input = k
-EXP2_DIR   = 'final-02e.PB3-exp'         # folder with eval.valid.* files, input = k, w
+EXP1_DIR   = '../MahlerExperiments/rk/rk/size/rk run 2 (size) (best run)'          # folder with eval.valid.* files, input = k
+EXP2_DIR   = '../MahlerExperiments/rk/rk_w/size/rk_w (size)'         # folder with eval.valid.* files, input = k, w
 EXP1_LABEL = r'input $k$'
 EXP2_LABEL = r'input $k,\ \omega_k$'
 ACCEPT     = 2.0                    # magnitude tolerance factor

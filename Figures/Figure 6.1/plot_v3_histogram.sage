@@ -17,7 +17,7 @@ def find(name):
     if hits:
         return hits[0]
     raise FileNotFoundError(name)
-OUTPUT_FULL = find('output_full.txt')
+OUTPUT_FULL = find('../MahlerExperiments/data/output_full.txt')
 
 def vp(n, p):
     n = abs(int(n)); v = 0
