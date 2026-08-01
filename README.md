@@ -4,4 +4,6 @@ The required data files are available on https://www.dropbox.com/scl/fo/insq45p2
 
 The file data_set.txt contains the complete dataset, including the values of k, r_k, and the computation time (note that the computation time is not always reported accurately).
 
+The file data_sqrt.txt contains the data set with m, r_{\sqrt{m}}, and the and the computation time (note that the computation time is not always reported accurately) for m between -30,000 to 30,000.
+
 ReferenceSheet.pdf gives an explanation of the notation for the experiments.
