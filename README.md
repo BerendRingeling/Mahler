@@ -7,3 +7,11 @@ The file data_set.txt contains the complete dataset, including the values of k, 
 The file data_sqrt.txt contains the data set with m, r_{\sqrt{m}}, and the and the computation time (note that the computation time is not always reported accurately) for m between -125,000 to 125,000.
 
 ReferenceSheet.pdf gives an explanation of the notation for the experiments.
+
+higher-precision.txt is the PARI/GP output
+for the higher-precision checks of 30 randomly sampled values of $k$.
+For each value, it lists the stored rational candidate $r_k$ and the
+relative discrepancy $|\mu_k-r_kL'(E_k,0)|/|\mu_k|$ at requested
+precisions of 50 and 100 decimal digits. All 60 checks passed.
+The discrepancies were below $2\times10^{-96}$ and $10^{-134}$
+at the two requested precisions, respectively.
