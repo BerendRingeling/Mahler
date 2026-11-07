@@ -1,0 +1,76 @@
+                                                        GP/PARI CALCULATOR Version 2.13.0 (released)
+                                                amd64 running linux (x86-64/GMP-6.2.0 kernel) 64-bit version
+                                                  compiled: Nov 18 2020, gcc version 8.3.1 20191121 (GCC)
+                                                                  threading engine: single
+                                                       (readline v7.0 enabled, extended help enabled)
+
+                                                           Copyright (C) 2000-2020 The PARI Group
+
+PARI/GP is free software, covered by the GNU General Public License, and comes WITHOUT ANY WARRANTY WHATSOEVER.
+
+Type ? for help, \q to quit.
+Type ?17 for how to get moral (and possibly technical) support.
+
+parisize = 8000000, primelimit = 500000
+PARI/GP version: [2, 13, 0]
+Number of cases: 30
+RESULT k=11719 digits=50 stored_r=1/3029200896 relative_error=7.995206292024609389 E-97 status=PASS
+RESULT k=11719 digits=100 stored_r=1/3029200896 relative_error=0.E-134 status=PASS
+RESULT k=17392 digits=50 stored_r=-1/3382272 relative_error=7.671919290441068875 E-97 status=PASS
+RESULT k=17392 digits=100 stored_r=-1/3382272 relative_error=2.2545744464695022164 E-135 status=PASS
+RESULT k=31885 digits=50 stored_r=-1/56526480384 relative_error=0.E-96 status=PASS
+RESULT k=31885 digits=100 stored_r=-1/56526480384 relative_error=2.1227934335103851122 E-135 status=PASS
+RESULT k=41790 digits=50 stored_r=-1/198481480704 relative_error=7.039841989284064435 E-97 status=PASS
+RESULT k=41790 digits=100 stored_r=-1/198481480704 relative_error=2.0688236222712381036 E-135 status=PASS
+RESULT k=48814 digits=50 stored_r=-1/248146882560 relative_error=0.E-96 status=PASS
+RESULT k=48814 digits=100 stored_r=-1/248146882560 relative_error=2.0390515418513997705 E-135 status=PASS
+RESULT k=50536 digits=50 stored_r=1/927833088 relative_error=0.E-96 status=PASS
+RESULT k=50536 digits=100 stored_r=1/927833088 relative_error=0.E-134 status=PASS
+RESULT k=53205 digits=50 stored_r=-1/310927698816 relative_error=1.3767222448261017363 E-96 status=PASS
+RESULT k=53205 digits=100 stored_r=-1/310927698816 relative_error=2.0229115268055760343 E-135 status=PASS
+RESULT k=98877 digits=50 stored_r=-1/1630304258176 relative_error=0.E-96 status=PASS
+RESULT k=98877 digits=100 stored_r=-1/1630304258176 relative_error=0.E-134 status=PASS
+RESULT k=106239 digits=50 stored_r=-1/2141624466112 relative_error=0.E-96 status=PASS
+RESULT k=106239 digits=100 stored_r=-1/2141624466112 relative_error=0.E-134 status=PASS
+RESULT k=106817 digits=50 stored_r=1/513978365952 relative_error=6.469267411357841359 E-97 status=PASS
+RESULT k=106817 digits=100 stored_r=1/513978365952 relative_error=0.E-134 status=PASS
+RESULT k=108696 digits=50 stored_r=1/41087139840 relative_error=6.459539276448625540 E-97 status=PASS
+RESULT k=108696 digits=100 stored_r=1/41087139840 relative_error=1.8982879820950114605 E-135 status=PASS
+RESULT k=122391 digits=50 stored_r=1/120419080704 relative_error=6.394107928874014972 E-97 status=PASS
+RESULT k=122391 digits=100 stored_r=1/120419080704 relative_error=0.E-134 status=PASS
+RESULT k=135248 digits=50 stored_r=-1/244733184 relative_error=6.340048665949111557 E-97 status=PASS
+RESULT k=135248 digits=100 stored_r=-1/244733184 relative_error=0.E-134 status=PASS
+RESULT k=146605 digits=50 stored_r=1/1493706350592 relative_error=1.2594147277461559806 E-96 status=PASS
+RESULT k=146605 digits=100 stored_r=1/1493706350592 relative_error=0.E-134 status=PASS
+RESULT k=148119 digits=50 stored_r=1/5891375526912 relative_error=6.291639566271858207 E-97 status=PASS
+RESULT k=148119 digits=100 stored_r=1/5891375526912 relative_error=1.8489466918906391265 E-135 status=PASS
+RESULT k=148511 digits=50 stored_r=-1/4822295251968 relative_error=6.290243162083188924 E-97 status=PASS
+RESULT k=148511 digits=100 stored_r=-1/4822295251968 relative_error=1.8485363255818277961 E-135 status=PASS
+RESULT k=156879 digits=50 stored_r=1/18231134208 relative_error=6.261421132390768405 E-97 status=PASS
+RESULT k=156879 digits=100 stored_r=1/18231134208 relative_error=0.E-134 status=PASS
+RESULT k=161720 digits=50 stored_r=-1/543925696512 relative_error=6.245554795778781157 E-97 status=PASS
+RESULT k=161720 digits=100 stored_r=-1/543925696512 relative_error=0.E-134 status=PASS
+RESULT k=165202 digits=50 stored_r=-1/7838906056704 relative_error=0.E-96 status=PASS
+RESULT k=165202 digits=100 stored_r=-1/7838906056704 relative_error=0.E-134 status=PASS
+RESULT k=168021 digits=50 stored_r=-1/27285553152 relative_error=6.225714039802791510 E-97 status=PASS
+RESULT k=168021 digits=100 stored_r=-1/27285553152 relative_error=0.E-134 status=PASS
+RESULT k=170323 digits=50 stored_r=-1/5881455032832 relative_error=0.E-96 status=PASS
+RESULT k=170323 digits=100 stored_r=-1/5881455032832 relative_error=1.8275060651786513253 E-135 status=PASS
+RESULT k=184434 digits=50 stored_r=1/16117391480832 relative_error=6.177858275859817602 E-97 status=PASS
+RESULT k=184434 digits=100 stored_r=1/16117391480832 relative_error=0.E-134 status=PASS
+RESULT k=199839 digits=50 stored_r=-1/14076423675904 relative_error=0.E-96 status=PASS
+RESULT k=199839 digits=100 stored_r=-1/14076423675904 relative_error=1.8035767550024235812 E-135 status=PASS
+RESULT k=201837 digits=50 stored_r=1/13196227307520 relative_error=0.E-96 status=PASS
+RESULT k=201837 digits=100 stored_r=1/13196227307520 relative_error=0.E-134 status=PASS
+RESULT k=208590 digits=50 stored_r=1/21289893182464 relative_error=6.115778234031780743 E-97 status=PASS
+RESULT k=208590 digits=100 stored_r=1/21289893182464 relative_error=0.E-134 status=PASS
+RESULT k=209419 digits=50 stored_r=1/12568799526912 relative_error=0.E-96 status=PASS
+RESULT k=209419 digits=100 stored_r=1/12568799526912 relative_error=0.E-134 status=PASS
+RESULT k=219915 digits=50 stored_r=1/235820871936 relative_error=6.089492210098031474 E-97 status=PASS
+RESULT k=219915 digits=100 stored_r=1/235820871936 relative_error=0.E-134 status=PASS
+RESULT k=235688 digits=50 stored_r=-1/481303971072 relative_error=6.055393855205054760 E-97 status=PASS
+RESULT k=235688 digits=100 stored_r=-1/481303971072 relative_error=1.7795203171993836713 E-135 status=PASS
+RESULT k=245492 digits=50 stored_r=1/777142106112 relative_error=0.E-96 status=PASS
+RESULT k=245492 digits=100 stored_r=1/777142106112 relative_error=1.7736767058151114888 E-135 status=PASS
+RESULT k=249874 digits=50 stored_r=-1/29752812198912 relative_error=0.E-96 status=PASS
+RESULT k=249874 digits=100 stored_r=-1/29752812198912 relative_error=0.E-134 status=PASS
